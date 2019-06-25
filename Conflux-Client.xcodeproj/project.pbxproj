@@ -3,19 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		111BB55022BF6C2000186C42 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 111BB54F22BF6C2000186C42 /* Login.storyboard */; };
+		111BB55222BF6C9700186C42 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB55122BF6C9700186C42 /* LoginViewController.swift */; };
+		111BB55822C028AA00186C42 /* URLConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111BB55722C028AA00186C42 /* URLConstants.swift */; };
 		116AA70122BF6922002C9239 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116AA70022BF6922002C9239 /* AppDelegate.swift */; };
 		116AA70322BF6922002C9239 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116AA70222BF6922002C9239 /* FirstViewController.swift */; };
 		116AA70522BF6922002C9239 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116AA70422BF6922002C9239 /* SecondViewController.swift */; };
 		116AA70822BF6922002C9239 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 116AA70622BF6922002C9239 /* Main.storyboard */; };
 		116AA70A22BF6925002C9239 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 116AA70922BF6925002C9239 /* Assets.xcassets */; };
 		116AA70D22BF6925002C9239 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 116AA70B22BF6925002C9239 /* LaunchScreen.storyboard */; };
+		11B93E5822C046DD000C4E58 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B93E5722C046DD000C4E58 /* RequestManager.swift */; };
+		11B93E5B22C0479C000C4E58 /* CreateUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B93E5A22C0479C000C4E58 /* CreateUserRequest.swift */; };
+		11B93E5D22C04864000C4E58 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B93E5C22C04864000C4E58 /* KeychainManager.swift */; };
+		11B93E8022C07378000C4E58 /* UIView+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B93E7D22C07377000C4E58 /* UIView+Convenience.swift */; };
+		11B93E8122C07378000C4E58 /* UIViewController+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B93E7E22C07377000C4E58 /* UIViewController+Convenience.swift */; };
+		11B93E8222C07378000C4E58 /* UILabel+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B93E7F22C07377000C4E58 /* UILabel+Convenience.swift */; };
+		11B93E8A22C07C7D000C4E58 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B93E8922C07C7D000C4E58 /* Status.swift */; };
+		11B93E8F22C08323000C4E58 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B93E8E22C08323000C4E58 /* CreateAccountViewController.swift */; };
+		11B93E9122C1D7DB000C4E58 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B93E9022C1D7DB000C4E58 /* ActivityIndicatorView.swift */; };
+		11B93E9322C1FCB9000C4E58 /* WrappedUserAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B93E9222C1FCB9000C4E58 /* WrappedUserAccessToken.swift */; };
+		68B40E7CEBDA598C5DBBB4F5 /* Pods_Conflux_Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164C1AB7E767E74C6233EEFC /* Pods_Conflux_Client.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		111BB54F22BF6C2000186C42 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		111BB55122BF6C9700186C42 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		111BB55722C028AA00186C42 /* URLConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstants.swift; sourceTree = "<group>"; };
 		116AA6FD22BF6922002C9239 /* Conflux-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Conflux-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		116AA70022BF6922002C9239 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		116AA70222BF6922002C9239 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +41,19 @@
 		116AA70922BF6925002C9239 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		116AA70C22BF6925002C9239 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		116AA70E22BF6925002C9239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11B93E5722C046DD000C4E58 /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		11B93E5A22C0479C000C4E58 /* CreateUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserRequest.swift; sourceTree = "<group>"; };
+		11B93E5C22C04864000C4E58 /* KeychainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
+		11B93E7D22C07377000C4E58 /* UIView+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Convenience.swift"; sourceTree = "<group>"; };
+		11B93E7E22C07377000C4E58 /* UIViewController+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Convenience.swift"; sourceTree = "<group>"; };
+		11B93E7F22C07377000C4E58 /* UILabel+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+Convenience.swift"; sourceTree = "<group>"; };
+		11B93E8922C07C7D000C4E58 /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		11B93E8E22C08323000C4E58 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		11B93E9022C1D7DB000C4E58 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
+		11B93E9222C1FCB9000C4E58 /* WrappedUserAccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedUserAccessToken.swift; sourceTree = "<group>"; };
+		164C1AB7E767E74C6233EEFC /* Pods_Conflux_Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Conflux_Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFD5195D2696FBE3D10214F8 /* Pods-Conflux-Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conflux-Client.debug.xcconfig"; path = "Target Support Files/Pods-Conflux-Client/Pods-Conflux-Client.debug.xcconfig"; sourceTree = "<group>"; };
+		F6B19CA3C03B59392CE138C7 /* Pods-Conflux-Client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conflux-Client.release.xcconfig"; path = "Target Support Files/Pods-Conflux-Client/Pods-Conflux-Client.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +61,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68B40E7CEBDA598C5DBBB4F5 /* Pods_Conflux_Client.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		111BB55622C0288700186C42 /* Structs and Enums */ = {
+			isa = PBXGroup;
+			children = (
+				111BB55722C028AA00186C42 /* URLConstants.swift */,
+				11B93E8922C07C7D000C4E58 /* Status.swift */,
+				11B93E9222C1FCB9000C4E58 /* WrappedUserAccessToken.swift */,
+			);
+			path = "Structs and Enums";
+			sourceTree = "<group>";
+		};
 		116AA6F422BF6922002C9239 = {
 			isa = PBXGroup;
 			children = (
 				116AA6FF22BF6922002C9239 /* Conflux-Client */,
 				116AA6FE22BF6922002C9239 /* Products */,
+				7BCA72B1D452539F3AE186BF /* Pods */,
+				418CA9A48A3BA0D955B9D5FA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +102,81 @@
 				116AA70022BF6922002C9239 /* AppDelegate.swift */,
 				116AA70222BF6922002C9239 /* FirstViewController.swift */,
 				116AA70422BF6922002C9239 /* SecondViewController.swift */,
+				11B93E8522C0746D000C4E58 /* Model */,
+				11B93E8422C07451000C4E58 /* View */,
+				111BB55622C0288700186C42 /* Structs and Enums */,
+				111BB54F22BF6C2000186C42 /* Login.storyboard */,
 				116AA70622BF6922002C9239 /* Main.storyboard */,
 				116AA70922BF6925002C9239 /* Assets.xcassets */,
 				116AA70B22BF6925002C9239 /* LaunchScreen.storyboard */,
 				116AA70E22BF6925002C9239 /* Info.plist */,
 			);
 			path = "Conflux-Client";
+			sourceTree = "<group>";
+		};
+		11B93E5922C04745000C4E58 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				11B93E5C22C04864000C4E58 /* KeychainManager.swift */,
+				11B93E5722C046DD000C4E58 /* RequestManager.swift */,
+				11B93E5A22C0479C000C4E58 /* CreateUserRequest.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		11B93E6A22C072F1000C4E58 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				11B93E7F22C07377000C4E58 /* UILabel+Convenience.swift */,
+				11B93E7D22C07377000C4E58 /* UIView+Convenience.swift */,
+				11B93E7E22C07377000C4E58 /* UIViewController+Convenience.swift */,
+			);
+			name = Extensions;
+			path = "Conflux-Client/View/Extensions";
+			sourceTree = SOURCE_ROOT;
+		};
+		11B93E8422C07451000C4E58 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11B93E9022C1D7DB000C4E58 /* ActivityIndicatorView.swift */,
+				11B93E8622C0786B000C4E58 /* Authentication */,
+				11B93E6A22C072F1000C4E58 /* Extensions */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11B93E8522C0746D000C4E58 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11B93E5922C04745000C4E58 /* Authentication */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		11B93E8622C0786B000C4E58 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				111BB55122BF6C9700186C42 /* LoginViewController.swift */,
+				11B93E8E22C08323000C4E58 /* CreateAccountViewController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		418CA9A48A3BA0D955B9D5FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				164C1AB7E767E74C6233EEFC /* Pods_Conflux_Client.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7BCA72B1D452539F3AE186BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AFD5195D2696FBE3D10214F8 /* Pods-Conflux-Client.debug.xcconfig */,
+				F6B19CA3C03B59392CE138C7 /* Pods-Conflux-Client.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 116AA71122BF6925002C9239 /* Build configuration list for PBXNativeTarget "Conflux-Client" */;
 			buildPhases = (
+				6E6F1014FC46D0AE79B94123 /* [CP] Check Pods Manifest.lock */,
 				116AA6F922BF6922002C9239 /* Sources */,
 				116AA6FA22BF6922002C9239 /* Frameworks */,
 				116AA6FB22BF6922002C9239 /* Resources */,
+				D949B689CFD49039D708690D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				111BB55022BF6C2000186C42 /* Login.storyboard in Resources */,
 				116AA70D22BF6925002C9239 /* LaunchScreen.storyboard in Resources */,
 				116AA70A22BF6925002C9239 /* Assets.xcassets in Resources */,
 				116AA70822BF6922002C9239 /* Main.storyboard in Resources */,
@@ -133,14 +248,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6E6F1014FC46D0AE79B94123 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Conflux-Client-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D949B689CFD49039D708690D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Conflux-Client/Pods-Conflux-Client-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Conflux-Client/Pods-Conflux-Client-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Conflux-Client/Pods-Conflux-Client-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		116AA6F922BF6922002C9239 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				111BB55222BF6C9700186C42 /* LoginViewController.swift in Sources */,
 				116AA70522BF6922002C9239 /* SecondViewController.swift in Sources */,
+				111BB55822C028AA00186C42 /* URLConstants.swift in Sources */,
+				11B93E5D22C04864000C4E58 /* KeychainManager.swift in Sources */,
+				11B93E8222C07378000C4E58 /* UILabel+Convenience.swift in Sources */,
+				11B93E9322C1FCB9000C4E58 /* WrappedUserAccessToken.swift in Sources */,
+				11B93E8F22C08323000C4E58 /* CreateAccountViewController.swift in Sources */,
+				11B93E5822C046DD000C4E58 /* RequestManager.swift in Sources */,
+				11B93E8022C07378000C4E58 /* UIView+Convenience.swift in Sources */,
+				11B93E8122C07378000C4E58 /* UIViewController+Convenience.swift in Sources */,
 				116AA70122BF6922002C9239 /* AppDelegate.swift in Sources */,
 				116AA70322BF6922002C9239 /* FirstViewController.swift in Sources */,
+				11B93E9122C1D7DB000C4E58 /* ActivityIndicatorView.swift in Sources */,
+				11B93E5B22C0479C000C4E58 /* CreateUserRequest.swift in Sources */,
+				11B93E8A22C07C7D000C4E58 /* Status.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +453,7 @@
 		};
 		116AA71222BF6925002C9239 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFD5195D2696FBE3D10214F8 /* Pods-Conflux-Client.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +471,7 @@
 		};
 		116AA71322BF6925002C9239 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6B19CA3C03B59392CE138C7 /* Pods-Conflux-Client.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
