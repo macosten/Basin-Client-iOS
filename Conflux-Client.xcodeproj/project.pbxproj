@@ -26,6 +26,8 @@
 		11B93E8F22C08323000C4E58 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B93E8E22C08323000C4E58 /* CreateAccountViewController.swift */; };
 		11B93E9122C1D7DB000C4E58 /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B93E9022C1D7DB000C4E58 /* ActivityIndicatorView.swift */; };
 		11B93E9322C1FCB9000C4E58 /* WrappedUserAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B93E9222C1FCB9000C4E58 /* WrappedUserAccessToken.swift */; };
+		11B945DA22CDC81D000C4E58 /* PublicUserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B945D922CDC81D000C4E58 /* PublicUserInformation.swift */; };
+		11B945DF22CDCEEF000C4E58 /* ShowMatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B945DE22CDCEEF000C4E58 /* ShowMatchesViewController.swift */; };
 		68B40E7CEBDA598C5DBBB4F5 /* Pods_Conflux_Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164C1AB7E767E74C6233EEFC /* Pods_Conflux_Client.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +53,8 @@
 		11B93E8E22C08323000C4E58 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		11B93E9022C1D7DB000C4E58 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 		11B93E9222C1FCB9000C4E58 /* WrappedUserAccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedUserAccessToken.swift; sourceTree = "<group>"; };
+		11B945D922CDC81D000C4E58 /* PublicUserInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicUserInformation.swift; sourceTree = "<group>"; };
+		11B945DE22CDCEEF000C4E58 /* ShowMatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMatchesViewController.swift; sourceTree = "<group>"; };
 		164C1AB7E767E74C6233EEFC /* Pods_Conflux_Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Conflux_Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFD5195D2696FBE3D10214F8 /* Pods-Conflux-Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conflux-Client.debug.xcconfig"; path = "Target Support Files/Pods-Conflux-Client/Pods-Conflux-Client.debug.xcconfig"; sourceTree = "<group>"; };
 		F6B19CA3C03B59392CE138C7 /* Pods-Conflux-Client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conflux-Client.release.xcconfig"; path = "Target Support Files/Pods-Conflux-Client/Pods-Conflux-Client.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,6 +78,7 @@
 				111BB55722C028AA00186C42 /* URLConstants.swift */,
 				11B93E8922C07C7D000C4E58 /* Status.swift */,
 				11B93E9222C1FCB9000C4E58 /* WrappedUserAccessToken.swift */,
+				11B945D922CDC81D000C4E58 /* PublicUserInformation.swift */,
 			);
 			path = "Structs and Enums";
 			sourceTree = "<group>";
@@ -104,7 +109,7 @@
 				116AA70422BF6922002C9239 /* SecondViewController.swift */,
 				11B93E8522C0746D000C4E58 /* Model */,
 				11B93E8422C07451000C4E58 /* View */,
-				111BB55622C0288700186C42 /* Structs and Enums */,
+				11B945DB22CDCE6C000C4E58 /* Controller */,
 				111BB54F22BF6C2000186C42 /* Login.storyboard */,
 				116AA70622BF6922002C9239 /* Main.storyboard */,
 				116AA70922BF6925002C9239 /* Assets.xcassets */,
@@ -129,7 +134,6 @@
 			children = (
 				11B93E7F22C07377000C4E58 /* UILabel+Convenience.swift */,
 				11B93E7D22C07377000C4E58 /* UIView+Convenience.swift */,
-				11B93E7E22C07377000C4E58 /* UIViewController+Convenience.swift */,
 			);
 			name = Extensions;
 			path = "Conflux-Client/View/Extensions";
@@ -148,6 +152,7 @@
 		11B93E8522C0746D000C4E58 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				111BB55622C0288700186C42 /* Structs and Enums */,
 				11B93E5922C04745000C4E58 /* Authentication */,
 			);
 			path = Model;
@@ -156,10 +161,35 @@
 		11B93E8622C0786B000C4E58 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		11B945DB22CDCE6C000C4E58 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11B945DE22CDCEEF000C4E58 /* ShowMatchesViewController.swift */,
+				11B945DC22CDCE87000C4E58 /* Authentication */,
+				11B945DD22CDCE91000C4E58 /* Extensions */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		11B945DC22CDCE87000C4E58 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
 				111BB55122BF6C9700186C42 /* LoginViewController.swift */,
 				11B93E8E22C08323000C4E58 /* CreateAccountViewController.swift */,
 			);
 			path = Authentication;
+			sourceTree = "<group>";
+		};
+		11B945DD22CDCE91000C4E58 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				11B93E7E22C07377000C4E58 /* UIViewController+Convenience.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		418CA9A48A3BA0D955B9D5FA /* Frameworks */ = {
@@ -305,6 +335,8 @@
 				11B93E5822C046DD000C4E58 /* RequestManager.swift in Sources */,
 				11B93E8022C07378000C4E58 /* UIView+Convenience.swift in Sources */,
 				11B93E8122C07378000C4E58 /* UIViewController+Convenience.swift in Sources */,
+				11B945DF22CDCEEF000C4E58 /* ShowMatchesViewController.swift in Sources */,
+				11B945DA22CDC81D000C4E58 /* PublicUserInformation.swift in Sources */,
 				116AA70122BF6922002C9239 /* AppDelegate.swift in Sources */,
 				116AA70322BF6922002C9239 /* FirstViewController.swift in Sources */,
 				11B93E9122C1D7DB000C4E58 /* ActivityIndicatorView.swift in Sources */,

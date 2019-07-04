@@ -127,11 +127,20 @@ final class RequestManager: NSObject {
         return sendRequest(.delete, urlString: loginUrlString, jsonBody: NilRequest()).map { data in
             //The server will return a Status object, so we'll decode it. If it fails, it'll error out.
             return try JSONDecoder().decode(Status.self, from: data)
-            
         }
         
     }
     
+    //MARK -- User Matching
+    
+    static let matchUrlString : String = RequestManager.defaultServerAddress + "match/fetch/"
+    
+    static func fetchMatches() -> Promise<[PublicUserInformation]> {
+        //Request our list of matches from the server. It will be returned as an array of PublicUserInformation structs.
+        return sendRequest(.get, urlString: matchUrlString, jsonBody: NilRequest()).map { data in
+            return try JSONDecoder().decode([PublicUserInformation].self, from: data)
+        }
+    }
     
     
 }
