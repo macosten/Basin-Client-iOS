@@ -28,6 +28,12 @@
 		11B93E9322C1FCB9000C4E58 /* WrappedUserAccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B93E9222C1FCB9000C4E58 /* WrappedUserAccessToken.swift */; };
 		11B945DA22CDC81D000C4E58 /* PublicUserInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B945D922CDC81D000C4E58 /* PublicUserInformation.swift */; };
 		11B945DF22CDCEEF000C4E58 /* ShowMatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B945DE22CDCEEF000C4E58 /* ShowMatchesViewController.swift */; };
+		11B945E722CFC369000C4E58 /* NameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B945E522CFC369000C4E58 /* NameTableViewCell.swift */; };
+		11B945E822CFC369000C4E58 /* NameTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B945E622CFC369000C4E58 /* NameTableViewCell.xib */; };
+		11B945EB22CFC385000C4E58 /* KeyedTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B945E922CFC385000C4E58 /* KeyedTextTableViewCell.swift */; };
+		11B945EC22CFC385000C4E58 /* KeyedTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B945EA22CFC385000C4E58 /* KeyedTextTableViewCell.xib */; };
+		11B945EF22CFC3B7000C4E58 /* ProfilePictureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B945ED22CFC3B7000C4E58 /* ProfilePictureTableViewCell.swift */; };
+		11B945F022CFC3B7000C4E58 /* ProfilePictureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B945EE22CFC3B7000C4E58 /* ProfilePictureTableViewCell.xib */; };
 		68B40E7CEBDA598C5DBBB4F5 /* Pods_Conflux_Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164C1AB7E767E74C6233EEFC /* Pods_Conflux_Client.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +61,12 @@
 		11B93E9222C1FCB9000C4E58 /* WrappedUserAccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrappedUserAccessToken.swift; sourceTree = "<group>"; };
 		11B945D922CDC81D000C4E58 /* PublicUserInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicUserInformation.swift; sourceTree = "<group>"; };
 		11B945DE22CDCEEF000C4E58 /* ShowMatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowMatchesViewController.swift; sourceTree = "<group>"; };
+		11B945E522CFC369000C4E58 /* NameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameTableViewCell.swift; sourceTree = "<group>"; };
+		11B945E622CFC369000C4E58 /* NameTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NameTableViewCell.xib; sourceTree = "<group>"; };
+		11B945E922CFC385000C4E58 /* KeyedTextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyedTextTableViewCell.swift; sourceTree = "<group>"; };
+		11B945EA22CFC385000C4E58 /* KeyedTextTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyedTextTableViewCell.xib; sourceTree = "<group>"; };
+		11B945ED22CFC3B7000C4E58 /* ProfilePictureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePictureTableViewCell.swift; sourceTree = "<group>"; };
+		11B945EE22CFC3B7000C4E58 /* ProfilePictureTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfilePictureTableViewCell.xib; sourceTree = "<group>"; };
 		164C1AB7E767E74C6233EEFC /* Pods_Conflux_Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Conflux_Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFD5195D2696FBE3D10214F8 /* Pods-Conflux-Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conflux-Client.debug.xcconfig"; path = "Target Support Files/Pods-Conflux-Client/Pods-Conflux-Client.debug.xcconfig"; sourceTree = "<group>"; };
 		F6B19CA3C03B59392CE138C7 /* Pods-Conflux-Client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conflux-Client.release.xcconfig"; path = "Target Support Files/Pods-Conflux-Client/Pods-Conflux-Client.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +156,7 @@
 			children = (
 				11B93E9022C1D7DB000C4E58 /* ActivityIndicatorView.swift */,
 				11B93E8622C0786B000C4E58 /* Authentication */,
+				11B945E022CFC253000C4E58 /* Matching */,
 				11B93E6A22C072F1000C4E58 /* Extensions */,
 			);
 			path = View;
@@ -190,6 +203,51 @@
 				11B93E7E22C07377000C4E58 /* UIViewController+Convenience.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		11B945E022CFC253000C4E58 /* Matching */ = {
+			isa = PBXGroup;
+			children = (
+				11B945E122CFC271000C4E58 /* Table View Cells */,
+			);
+			path = Matching;
+			sourceTree = "<group>";
+		};
+		11B945E122CFC271000C4E58 /* Table View Cells */ = {
+			isa = PBXGroup;
+			children = (
+				11B945E322CFC2F9000C4E58 /* Profile Picture Table View Cell */,
+				11B945E222CFC2AE000C4E58 /* Name Table View Cell */,
+				11B945E422CFC310000C4E58 /* Keyed Text Table View Cell */,
+			);
+			path = "Table View Cells";
+			sourceTree = "<group>";
+		};
+		11B945E222CFC2AE000C4E58 /* Name Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				11B945E522CFC369000C4E58 /* NameTableViewCell.swift */,
+				11B945E622CFC369000C4E58 /* NameTableViewCell.xib */,
+			);
+			path = "Name Table View Cell";
+			sourceTree = "<group>";
+		};
+		11B945E322CFC2F9000C4E58 /* Profile Picture Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				11B945ED22CFC3B7000C4E58 /* ProfilePictureTableViewCell.swift */,
+				11B945EE22CFC3B7000C4E58 /* ProfilePictureTableViewCell.xib */,
+			);
+			path = "Profile Picture Table View Cell";
+			sourceTree = "<group>";
+		};
+		11B945E422CFC310000C4E58 /* Keyed Text Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				11B945E922CFC385000C4E58 /* KeyedTextTableViewCell.swift */,
+				11B945EA22CFC385000C4E58 /* KeyedTextTableViewCell.xib */,
+			);
+			path = "Keyed Text Table View Cell";
 			sourceTree = "<group>";
 		};
 		418CA9A48A3BA0D955B9D5FA /* Frameworks */ = {
@@ -269,10 +327,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11B945F022CFC3B7000C4E58 /* ProfilePictureTableViewCell.xib in Resources */,
 				111BB55022BF6C2000186C42 /* Login.storyboard in Resources */,
 				116AA70D22BF6925002C9239 /* LaunchScreen.storyboard in Resources */,
 				116AA70A22BF6925002C9239 /* Assets.xcassets in Resources */,
 				116AA70822BF6922002C9239 /* Main.storyboard in Resources */,
+				11B945E822CFC369000C4E58 /* NameTableViewCell.xib in Resources */,
+				11B945EC22CFC385000C4E58 /* KeyedTextTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,12 +386,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11B945EB22CFC385000C4E58 /* KeyedTextTableViewCell.swift in Sources */,
 				111BB55222BF6C9700186C42 /* LoginViewController.swift in Sources */,
 				116AA70522BF6922002C9239 /* SecondViewController.swift in Sources */,
 				111BB55822C028AA00186C42 /* URLConstants.swift in Sources */,
 				11B93E5D22C04864000C4E58 /* KeychainManager.swift in Sources */,
 				11B93E8222C07378000C4E58 /* UILabel+Convenience.swift in Sources */,
 				11B93E9322C1FCB9000C4E58 /* WrappedUserAccessToken.swift in Sources */,
+				11B945E722CFC369000C4E58 /* NameTableViewCell.swift in Sources */,
 				11B93E8F22C08323000C4E58 /* CreateAccountViewController.swift in Sources */,
 				11B93E5822C046DD000C4E58 /* RequestManager.swift in Sources */,
 				11B93E8022C07378000C4E58 /* UIView+Convenience.swift in Sources */,
@@ -339,6 +402,7 @@
 				11B945DA22CDC81D000C4E58 /* PublicUserInformation.swift in Sources */,
 				116AA70122BF6922002C9239 /* AppDelegate.swift in Sources */,
 				116AA70322BF6922002C9239 /* FirstViewController.swift in Sources */,
+				11B945EF22CFC3B7000C4E58 /* ProfilePictureTableViewCell.swift in Sources */,
 				11B93E9122C1D7DB000C4E58 /* ActivityIndicatorView.swift in Sources */,
 				11B93E5B22C0479C000C4E58 /* CreateUserRequest.swift in Sources */,
 				11B93E8A22C07C7D000C4E58 /* Status.swift in Sources */,
