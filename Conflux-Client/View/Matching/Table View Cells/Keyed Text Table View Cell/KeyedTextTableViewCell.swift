@@ -8,8 +8,16 @@
 
 import UIKit
 
-class KeyedTextTableViewCell: UITableViewCell {
 
+
+class KeyedTextTableViewCell: UITableViewCell {
+    
+
+    
+    //Not sure if we're going to separate these into two labels or not
+    @IBOutlet weak var keyLabel: UILabel!
+    @IBOutlet weak var valueLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

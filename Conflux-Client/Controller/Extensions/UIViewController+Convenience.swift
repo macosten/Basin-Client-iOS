@@ -24,8 +24,7 @@ extension UIViewController {
     
     func presentDialogBox(withTitle: String, withMessage: String){
         let alert = UIAlertController(title: withTitle, message: withMessage, preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { (_) in
-        }))
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: nil))
         self.present(alert, animated: true, completion: nil)
     }
     

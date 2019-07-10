@@ -100,6 +100,16 @@ final class RequestManager: NSObject {
         }
     }
     
+    //Attempt to decode data received from the server as the desired datatype. If we can't, then it's probably an error, so we'll try decoding it into that.
+    static func attemptDecode<T:Decodable>(type: T.Type, data: Data) throws -> T {
+        guard let returnValue = try? JSONDecoder().decode(type, from: data) else {
+            let reason = try JSONDecoder().decode(VaporError.self, from: data).reason
+            throw NSError(domain: reason, code: 0, userInfo: nil)
+        }
+        return returnValue
+    }
+
+    
     //MARK - Specific Request Methods
     //MARK - Login and Logout
     
@@ -108,7 +118,7 @@ final class RequestManager: NSObject {
     static func createUser(createUserRequest: CreateUserRequest) -> Promise<Status> {
         return sendRequest(.post, urlString: RequestManager.defaultServerAddress + "auth/register/", jsonBody: createUserRequest).map { data in
             //The server will return a Status object, so we'll decode it. If it fails, it'll error out.
-            return try JSONDecoder().decode(Status.self, from: data)
+            return try attemptDecode(type: Status.self, data: data)
             
         }
     }
@@ -117,7 +127,8 @@ final class RequestManager: NSObject {
         //Encode the object, then send the request. If the encoding fails, return a rejected promise.
         //Note that this will use basic auth.
         return sendRequest(.post, authType: .basic, basicAuthCredentials: basicAuthCredentials, urlString: loginUrlString, jsonBody: NilRequest()).map { data in
-            return try JSONDecoder().decode(WrappedUserAccessToken.self, from: data).access_token
+            //In the future: We might want to change this to use a try? then a guard to better control what kind of error gets thrown.
+            return try attemptDecode(type: WrappedUserAccessToken.self, data: data).access_token
         }
         
     }
@@ -126,9 +137,21 @@ final class RequestManager: NSObject {
         //The server will know who is logging out based on the token sent.
         return sendRequest(.delete, urlString: loginUrlString, jsonBody: NilRequest()).map { data in
             //The server will return a Status object, so we'll decode it. If it fails, it'll error out.
-            return try JSONDecoder().decode(Status.self, from: data)
+            return try attemptDecode(type: Status.self, data: data)
         }
         
+    }
+    
+    static func userLoginWithSavedInfo() -> Promise<String> {
+        //Like userLogin, but we use the data stored by KeychainManager to log in rather than getting it from the user.
+        guard let username = KeychainManager.username else { return Promise.init(error: NSError(domain: "No username is saved.", code: -1, userInfo: nil))}
+        guard let password = KeychainManager.password else { return Promise.init(error: NSError(domain: "No password is saved.", code: -2, userInfo: nil))}
+        
+        let credentials = BasicAuthCredentials(username: username, password: password)
+        //Now, send the request with the synthesized credentials.
+        return sendRequest(.post, authType: .basic, basicAuthCredentials: credentials, urlString: loginUrlString, jsonBody: NilRequest()).map { data in
+            return try attemptDecode(type: WrappedUserAccessToken.self, data: data).access_token
+        }
     }
     
     //MARK -- User Matching
@@ -138,7 +161,7 @@ final class RequestManager: NSObject {
     static func fetchMatches() -> Promise<[PublicUserInformation]> {
         //Request our list of matches from the server. It will be returned as an array of PublicUserInformation structs.
         return sendRequest(.get, urlString: matchUrlString, jsonBody: NilRequest()).map { data in
-            return try JSONDecoder().decode([PublicUserInformation].self, from: data)
+            return try attemptDecode(type: [PublicUserInformation].self, data: data)
         }
     }
     

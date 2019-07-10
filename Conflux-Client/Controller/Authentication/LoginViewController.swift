@@ -18,11 +18,23 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var loginButton: UIButton!
     
+    override func viewWillAppear(_ animated: Bool) {
+        //I'd mess with refresh tokens and whatnot here, but the security I've implemented isn't that sophisticated yet (I plan on it eventually when there's less foundational stuff to do still).
+        super.viewWillAppear(animated)
+        //Stub. Figure out what to do here later.
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         hideKeyboardOnTap()
-        // Do any additional setup after loading the view.
+        retrieveCredentials()
+        // I might also want to attempt an autologin here, but I don't feel like impementing that that right this second.
+    }
+    
+    func retrieveCredentials(){
+        //Retrieve the saved credentials from the keychain manager, then autofill them into the appropriate textboxes.
+        emailTextField.text = KeychainManager.username
+        passwordTextField.text = KeychainManager.password
     }
     
     @IBAction func loginButtonPressed(_ sender: Any) {
@@ -52,23 +64,37 @@ class LoginViewController: UIViewController {
                 
                 //Stop the spinner.
                 spinner.stop()
-            
-                //This is the part where I'd normally move to another ViewController and handle stuff there, but for now, I just want to test logins.
-                self.presentDialogBox(withTitle: "Success", withMessage: "The login was a success, but for now there's nothing else to do. Your token is \(result), by the way, and it has been saved.")
-                //This is where we'd save the token and transition to the main area of the app.
+                
+                //...and our work here is done; go to the main application now.
+                self.gotoMainApplication(animated: true)
+
             } else {
                 //Stop the spinner.
                 spinner.stop()
                 
-                self.presentDialogBox(withTitle: "Failure", withMessage: "The login failed. The message returned by the server was: \(result)")
+                self.presentDialogBox(withTitle: "Failure", withMessage: "The login failed. The message returned by the server was: \(result). Make sure your information was all entered correctly.")
             }
+            
         }.catch { error in
             //Stop the spinner.
             spinner.stop()
             
-            self.presentDialogBox(withTitle: "Error", withMessage: "There was an error logging in: \(error.localizedDescription). Check to make sure you entered everything correctly.")
+            self.presentDialogBox(withTitle: "Error", withMessage: "There was an error logging in: \"\(error.localizedDescription)\". Check to make sure you entered your email and password correctly, then try again.")
         }
     }
     
+    func gotoMainApplication(animated: Bool){
+        
+        //This is a kinder version of a force-unwrap in that it will tell the user that it messed up before quitting instead of just quitting. I can't think of anything better to do right now.
+        guard let nextViewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateInitialViewController() else {
+            let alert = UIAlertController(title: "Fatal Error", message: "Cannot continue: The main app storyboard is broken.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Quit", style: .default, handler: { _ in
+                fatalError("Storyboard \"Main\" doesn't exist or it doesn't have an initial view controller. The app can't continue; this should never happen.")
+            }))
+            return
+        }
+        
+        self.present(nextViewController, animated: animated, completion: nil)
+    }
     
 }

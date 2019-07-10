@@ -10,6 +10,10 @@ import UIKit
 
 class ProfilePictureTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var coverPhotoImageView: UIImageView!
+    @IBOutlet weak var profilePictureImageView: UIImageView!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

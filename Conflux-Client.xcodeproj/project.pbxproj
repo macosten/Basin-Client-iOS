@@ -34,6 +34,7 @@
 		11B945EC22CFC385000C4E58 /* KeyedTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B945EA22CFC385000C4E58 /* KeyedTextTableViewCell.xib */; };
 		11B945EF22CFC3B7000C4E58 /* ProfilePictureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B945ED22CFC3B7000C4E58 /* ProfilePictureTableViewCell.swift */; };
 		11B945F022CFC3B7000C4E58 /* ProfilePictureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B945EE22CFC3B7000C4E58 /* ProfilePictureTableViewCell.xib */; };
+		11B945F422D5A442000C4E58 /* VaporError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B945F322D5A442000C4E58 /* VaporError.swift */; };
 		68B40E7CEBDA598C5DBBB4F5 /* Pods_Conflux_Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164C1AB7E767E74C6233EEFC /* Pods_Conflux_Client.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		11B945EA22CFC385000C4E58 /* KeyedTextTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyedTextTableViewCell.xib; sourceTree = "<group>"; };
 		11B945ED22CFC3B7000C4E58 /* ProfilePictureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePictureTableViewCell.swift; sourceTree = "<group>"; };
 		11B945EE22CFC3B7000C4E58 /* ProfilePictureTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfilePictureTableViewCell.xib; sourceTree = "<group>"; };
+		11B945F322D5A442000C4E58 /* VaporError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaporError.swift; sourceTree = "<group>"; };
 		164C1AB7E767E74C6233EEFC /* Pods_Conflux_Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Conflux_Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFD5195D2696FBE3D10214F8 /* Pods-Conflux-Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conflux-Client.debug.xcconfig"; path = "Target Support Files/Pods-Conflux-Client/Pods-Conflux-Client.debug.xcconfig"; sourceTree = "<group>"; };
 		F6B19CA3C03B59392CE138C7 /* Pods-Conflux-Client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conflux-Client.release.xcconfig"; path = "Target Support Files/Pods-Conflux-Client/Pods-Conflux-Client.release.xcconfig"; sourceTree = "<group>"; };
@@ -84,17 +86,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		111BB55622C0288700186C42 /* Structs and Enums */ = {
-			isa = PBXGroup;
-			children = (
-				111BB55722C028AA00186C42 /* URLConstants.swift */,
-				11B93E8922C07C7D000C4E58 /* Status.swift */,
-				11B93E9222C1FCB9000C4E58 /* WrappedUserAccessToken.swift */,
-				11B945D922CDC81D000C4E58 /* PublicUserInformation.swift */,
-			);
-			path = "Structs and Enums";
-			sourceTree = "<group>";
-		};
 		116AA6F422BF6922002C9239 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +128,7 @@
 				11B93E5C22C04864000C4E58 /* KeychainManager.swift */,
 				11B93E5722C046DD000C4E58 /* RequestManager.swift */,
 				11B93E5A22C0479C000C4E58 /* CreateUserRequest.swift */,
+				11B93E9222C1FCB9000C4E58 /* WrappedUserAccessToken.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -165,7 +157,10 @@
 		11B93E8522C0746D000C4E58 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				111BB55622C0288700186C42 /* Structs and Enums */,
+				111BB55722C028AA00186C42 /* URLConstants.swift */,
+				11B93E8922C07C7D000C4E58 /* Status.swift */,
+				11B945D922CDC81D000C4E58 /* PublicUserInformation.swift */,
+				11B945F322D5A442000C4E58 /* VaporError.swift */,
 				11B93E5922C04745000C4E58 /* Authentication */,
 			);
 			path = Model;
@@ -181,7 +176,7 @@
 		11B945DB22CDCE6C000C4E58 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				11B945DE22CDCEEF000C4E58 /* ShowMatchesViewController.swift */,
+				11B945F222D57069000C4E58 /* Matching */,
 				11B945DC22CDCE87000C4E58 /* Authentication */,
 				11B945DD22CDCE91000C4E58 /* Extensions */,
 			);
@@ -248,6 +243,14 @@
 				11B945EA22CFC385000C4E58 /* KeyedTextTableViewCell.xib */,
 			);
 			path = "Keyed Text Table View Cell";
+			sourceTree = "<group>";
+		};
+		11B945F222D57069000C4E58 /* Matching */ = {
+			isa = PBXGroup;
+			children = (
+				11B945DE22CDCEEF000C4E58 /* ShowMatchesViewController.swift */,
+			);
+			path = Matching;
 			sourceTree = "<group>";
 		};
 		418CA9A48A3BA0D955B9D5FA /* Frameworks */ = {
@@ -396,6 +399,7 @@
 				11B945E722CFC369000C4E58 /* NameTableViewCell.swift in Sources */,
 				11B93E8F22C08323000C4E58 /* CreateAccountViewController.swift in Sources */,
 				11B93E5822C046DD000C4E58 /* RequestManager.swift in Sources */,
+				11B945F422D5A442000C4E58 /* VaporError.swift in Sources */,
 				11B93E8022C07378000C4E58 /* UIView+Convenience.swift in Sources */,
 				11B93E8122C07378000C4E58 /* UIViewController+Convenience.swift in Sources */,
 				11B945DF22CDCEEF000C4E58 /* ShowMatchesViewController.swift in Sources */,
