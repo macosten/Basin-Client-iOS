@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_Conflux_ClientVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_Conflux_ClientVersionString[];
+FOUNDATION_EXPORT double Pods_Basin_ClientVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_Basin_ClientVersionString[];
 

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F66BCECA59527FBF56B8EDD4E248BEEC"
-               BuildableName = "Pods_Conflux_Client.framework"
-               BlueprintName = "Pods-Conflux-Client"
+               BlueprintIdentifier = "15512FEAEF89C87F7722E10D762ABB95"
+               BuildableName = "Pods_Basin_Client.framework"
+               BlueprintName = "Pods-Basin-Client"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F66BCECA59527FBF56B8EDD4E248BEEC"
-            BuildableName = "Pods_Conflux_Client.framework"
-            BlueprintName = "Pods-Conflux-Client"
+            BlueprintIdentifier = "15512FEAEF89C87F7722E10D762ABB95"
+            BuildableName = "Pods_Basin_Client.framework"
+            BlueprintName = "Pods-Basin-Client"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

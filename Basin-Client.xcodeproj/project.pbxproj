@@ -35,14 +35,14 @@
 		11B945EF22CFC3B7000C4E58 /* ProfilePictureTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B945ED22CFC3B7000C4E58 /* ProfilePictureTableViewCell.swift */; };
 		11B945F022CFC3B7000C4E58 /* ProfilePictureTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11B945EE22CFC3B7000C4E58 /* ProfilePictureTableViewCell.xib */; };
 		11B945F422D5A442000C4E58 /* VaporError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B945F322D5A442000C4E58 /* VaporError.swift */; };
-		68B40E7CEBDA598C5DBBB4F5 /* Pods_Conflux_Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 164C1AB7E767E74C6233EEFC /* Pods_Conflux_Client.framework */; };
+		86E47F202A71CBC77F82EE1E /* Pods_Basin_Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ED6318C0C0235530F3AE673 /* Pods_Basin_Client.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		111BB54F22BF6C2000186C42 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		111BB55122BF6C9700186C42 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		111BB55722C028AA00186C42 /* URLConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstants.swift; sourceTree = "<group>"; };
-		116AA6FD22BF6922002C9239 /* Conflux-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Conflux-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		116AA6FD22BF6922002C9239 /* Basin-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Basin-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		116AA70022BF6922002C9239 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		116AA70222BF6922002C9239 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		116AA70422BF6922002C9239 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -69,7 +69,9 @@
 		11B945ED22CFC3B7000C4E58 /* ProfilePictureTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePictureTableViewCell.swift; sourceTree = "<group>"; };
 		11B945EE22CFC3B7000C4E58 /* ProfilePictureTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfilePictureTableViewCell.xib; sourceTree = "<group>"; };
 		11B945F322D5A442000C4E58 /* VaporError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaporError.swift; sourceTree = "<group>"; };
-		164C1AB7E767E74C6233EEFC /* Pods_Conflux_Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Conflux_Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D1D5B72DB1FAA4EF3068DC5 /* Pods-Basin-Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Basin-Client.debug.xcconfig"; path = "Target Support Files/Pods-Basin-Client/Pods-Basin-Client.debug.xcconfig"; sourceTree = "<group>"; };
+		415BB17EA6010906DA3E2E9A /* Pods-Basin-Client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Basin-Client.release.xcconfig"; path = "Target Support Files/Pods-Basin-Client/Pods-Basin-Client.release.xcconfig"; sourceTree = "<group>"; };
+		5ED6318C0C0235530F3AE673 /* Pods_Basin_Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Basin_Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFD5195D2696FBE3D10214F8 /* Pods-Conflux-Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conflux-Client.debug.xcconfig"; path = "Target Support Files/Pods-Conflux-Client/Pods-Conflux-Client.debug.xcconfig"; sourceTree = "<group>"; };
 		F6B19CA3C03B59392CE138C7 /* Pods-Conflux-Client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Conflux-Client.release.xcconfig"; path = "Target Support Files/Pods-Conflux-Client/Pods-Conflux-Client.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68B40E7CEBDA598C5DBBB4F5 /* Pods_Conflux_Client.framework in Frameworks */,
+				86E47F202A71CBC77F82EE1E /* Pods_Basin_Client.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +91,7 @@
 		116AA6F422BF6922002C9239 = {
 			isa = PBXGroup;
 			children = (
-				116AA6FF22BF6922002C9239 /* Conflux-Client */,
+				116AA6FF22BF6922002C9239 /* Basin-Client */,
 				116AA6FE22BF6922002C9239 /* Products */,
 				7BCA72B1D452539F3AE186BF /* Pods */,
 				418CA9A48A3BA0D955B9D5FA /* Frameworks */,
@@ -99,12 +101,12 @@
 		116AA6FE22BF6922002C9239 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				116AA6FD22BF6922002C9239 /* Conflux-Client.app */,
+				116AA6FD22BF6922002C9239 /* Basin-Client.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		116AA6FF22BF6922002C9239 /* Conflux-Client */ = {
+		116AA6FF22BF6922002C9239 /* Basin-Client */ = {
 			isa = PBXGroup;
 			children = (
 				116AA70022BF6922002C9239 /* AppDelegate.swift */,
@@ -119,7 +121,7 @@
 				116AA70B22BF6925002C9239 /* LaunchScreen.storyboard */,
 				116AA70E22BF6925002C9239 /* Info.plist */,
 			);
-			path = "Conflux-Client";
+			path = "Basin-Client";
 			sourceTree = "<group>";
 		};
 		11B93E5922C04745000C4E58 /* Authentication */ = {
@@ -256,7 +258,7 @@
 		418CA9A48A3BA0D955B9D5FA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				164C1AB7E767E74C6233EEFC /* Pods_Conflux_Client.framework */,
+				5ED6318C0C0235530F3AE673 /* Pods_Basin_Client.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -266,6 +268,8 @@
 			children = (
 				AFD5195D2696FBE3D10214F8 /* Pods-Conflux-Client.debug.xcconfig */,
 				F6B19CA3C03B59392CE138C7 /* Pods-Conflux-Client.release.xcconfig */,
+				2D1D5B72DB1FAA4EF3068DC5 /* Pods-Basin-Client.debug.xcconfig */,
+				415BB17EA6010906DA3E2E9A /* Pods-Basin-Client.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -273,9 +277,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		116AA6FC22BF6922002C9239 /* Conflux-Client */ = {
+		116AA6FC22BF6922002C9239 /* Basin-Client */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 116AA71122BF6925002C9239 /* Build configuration list for PBXNativeTarget "Conflux-Client" */;
+			buildConfigurationList = 116AA71122BF6925002C9239 /* Build configuration list for PBXNativeTarget "Basin-Client" */;
 			buildPhases = (
 				6E6F1014FC46D0AE79B94123 /* [CP] Check Pods Manifest.lock */,
 				116AA6F922BF6922002C9239 /* Sources */,
@@ -287,9 +291,9 @@
 			);
 			dependencies = (
 			);
-			name = "Conflux-Client";
+			name = "Basin-Client";
 			productName = "Conflux-Client";
-			productReference = 116AA6FD22BF6922002C9239 /* Conflux-Client.app */;
+			productReference = 116AA6FD22BF6922002C9239 /* Basin-Client.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -307,7 +311,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 116AA6F822BF6922002C9239 /* Build configuration list for PBXProject "Conflux-Client" */;
+			buildConfigurationList = 116AA6F822BF6922002C9239 /* Build configuration list for PBXProject "Basin-Client" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -320,7 +324,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				116AA6FC22BF6922002C9239 /* Conflux-Client */,
+				116AA6FC22BF6922002C9239 /* Basin-Client */,
 			);
 		};
 /* End PBXProject section */
@@ -358,7 +362,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Conflux-Client-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Basin-Client-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -371,15 +375,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Conflux-Client/Pods-Conflux-Client-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Basin-Client/Pods-Basin-Client-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Conflux-Client/Pods-Conflux-Client-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Basin-Client/Pods-Basin-Client-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Conflux-Client/Pods-Conflux-Client-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Basin-Client/Pods-Basin-Client-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -553,7 +557,7 @@
 		};
 		116AA71222BF6925002C9239 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AFD5195D2696FBE3D10214F8 /* Pods-Conflux-Client.debug.xcconfig */;
+			baseConfigurationReference = 2D1D5B72DB1FAA4EF3068DC5 /* Pods-Basin-Client.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -562,7 +566,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "macosten.Conflux-Client";
+				PRODUCT_BUNDLE_IDENTIFIER = "macosten.Basin-Client";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -571,7 +575,7 @@
 		};
 		116AA71322BF6925002C9239 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6B19CA3C03B59392CE138C7 /* Pods-Conflux-Client.release.xcconfig */;
+			baseConfigurationReference = 415BB17EA6010906DA3E2E9A /* Pods-Basin-Client.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -580,7 +584,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "macosten.Conflux-Client";
+				PRODUCT_BUNDLE_IDENTIFIER = "macosten.Basin-Client";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -590,7 +594,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		116AA6F822BF6922002C9239 /* Build configuration list for PBXProject "Conflux-Client" */ = {
+		116AA6F822BF6922002C9239 /* Build configuration list for PBXProject "Basin-Client" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				116AA70F22BF6925002C9239 /* Debug */,
@@ -599,7 +603,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		116AA71122BF6925002C9239 /* Build configuration list for PBXNativeTarget "Conflux-Client" */ = {
+		116AA71122BF6925002C9239 /* Build configuration list for PBXNativeTarget "Basin-Client" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				116AA71222BF6925002C9239 /* Debug */,

@@ -1,7 +1,7 @@
 platform :ios, '10.0'
 use_frameworks!
 
-target 'Conflux-Client' do
+target 'Basin-Client' do
    pod 'PromiseKit'  
    #pod 'AppAuth'
    pod 'KeychainAccess'   

@@ -1,6 +1,0 @@
-framework module Pods_Conflux_Client {
-  umbrella header "Pods-Conflux-Client-umbrella.h"
-
-  export *
-  module * { export * }
-}
