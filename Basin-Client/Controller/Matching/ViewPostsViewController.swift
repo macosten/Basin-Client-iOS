@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ShowMatchesViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewPostsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var matchedUsers = [PublicUserInformation]()
     
@@ -35,7 +35,7 @@ class ShowMatchesViewController: UIViewController, UITableViewDelegate, UITableV
                 self.presentDialogBox(withTitle: "No Matches Found", withMessage: "Sorry, we couldn't find any matches for you right now. Check back later!")
             }
         }.catch { error in
-            self.presentDialogBox(withTitle: "Error", withMessage: "In ShowMatchesViewController.fetchMoreMatches(): \(error)")
+            self.presentDialogBox(withTitle: "Error", withMessage: "In ViewPostsViewController.fetchMoreMatches(): \(error)")
             spinner.stop()
         }
         
