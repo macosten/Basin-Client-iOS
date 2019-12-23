@@ -13,7 +13,7 @@
         <!--Login-->
         <scene sceneID="n2C-jd-k5c">
             <objects>
-                <viewController title="Login" id="Mlm-aG-bbH" customClass="LoginViewController" customModule="Conflux_Client" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Login" id="Mlm-aG-bbH" customClass="LoginViewController" customModule="Basin_Client" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Es-yf-Z1p">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,8 +25,8 @@
                                     <segue destination="wLa-xu-AJ8" kind="show" id="eHx-e8-Gns"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Conflux 0.0.0d" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABM-rO-evt">
-                                <rect key="frame" x="104.5" y="80" width="111" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Basin 0.0.0d0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABM-rO-evt">
+                                <rect key="frame" x="108" y="80" width="104" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -91,7 +91,7 @@
         <!--Create Account-->
         <scene sceneID="vLK-WY-ZfZ">
             <objects>
-                <viewController title="Create Account" id="wLa-xu-AJ8" customClass="CreateAccountViewController" customModule="Conflux_Client" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Create Account" id="wLa-xu-AJ8" customClass="CreateAccountViewController" customModule="Basin_Client" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lss-5D-cD3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

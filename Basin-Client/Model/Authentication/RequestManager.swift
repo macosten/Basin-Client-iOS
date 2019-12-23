@@ -154,16 +154,9 @@ final class RequestManager: NSObject {
         }
     }
     
-    //MARK -- User Matching
+    //MARK: -- User Matching
     
     static let matchUrlString : String = RequestManager.defaultServerAddress + "match/fetch/"
-    
-    static func fetchMatches() -> Promise<[PublicUserInformation]> {
-        //Request our list of matches from the server. It will be returned as an array of PublicUserInformation structs.
-        return sendRequest(.get, urlString: matchUrlString, jsonBody: NilRequest()).map { data in
-            return try attemptDecode(type: [PublicUserInformation].self, data: data)
-        }
-    }
     
     
 }

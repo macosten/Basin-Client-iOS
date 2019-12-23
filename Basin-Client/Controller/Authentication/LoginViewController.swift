@@ -87,7 +87,7 @@ class LoginViewController: UIViewController {
         
         //This is a kinder version of a force-unwrap in that it will tell the user that it messed up before quitting instead of just quitting. I can't think of anything better to do right now.
         guard let nextViewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateInitialViewController() else {
-            let alert = UIAlertController(title: "Fatal Error", message: "Cannot continue: The main app storyboard is broken.", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Fatal Error", message: "Cannot continue: The main app storyboard is broken. Reinstall the app or file a bug report.", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Quit", style: .default, handler: { _ in
                 fatalError("Storyboard \"Main\" doesn't exist or it doesn't have an initial view controller. The app can't continue; this should never happen.")
             }))

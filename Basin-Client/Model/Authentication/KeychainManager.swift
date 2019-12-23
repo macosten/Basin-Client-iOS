@@ -11,8 +11,8 @@ import KeychainAccess
 
 final class KeychainManager: NSObject {
     
-    private static let accessGroup = "Conflux" //Not final
-    private static let serviceName = "Conflux-iOS-Devel"
+    private static let accessGroup = "Basin" //Not final
+    private static let serviceName = "Basin-iOS"
     
     static let keychain = Keychain(service: KeychainManager.serviceName, accessGroup: KeychainManager.accessGroup)
     
