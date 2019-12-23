@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BrowsePostsTableViewCell" rowHeight="84" id="KGk-i7-Jjw" customClass="BrowsePostsTableViewCell" customModule="Basin_Client" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a Post Title. It has a good bit of room to grow." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ht0-1a-qY0">
+                        <rect key="frame" x="8" y="8" width="295" height="41"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oDl-uR-6mj">
+                        <rect key="frame" x="8" y="59" width="66" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ht0-1a-qY0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Jb4-pC-dnp"/>
+                    <constraint firstItem="oDl-uR-6mj" firstAttribute="leading" secondItem="Ht0-1a-qY0" secondAttribute="leading" id="QNv-cs-OzJ"/>
+                    <constraint firstItem="Ht0-1a-qY0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="hf4-ZX-dpj"/>
+                    <constraint firstAttribute="bottom" secondItem="oDl-uR-6mj" secondAttribute="bottom" constant="8" id="iBg-vZ-Dro"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ht0-1a-qY0" secondAttribute="trailing" constant="8" id="mJX-sH-4RK"/>
+                    <constraint firstItem="oDl-uR-6mj" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Ht0-1a-qY0" secondAttribute="bottom" constant="8" id="vrd-F1-6fg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="postTitleLabel" destination="Ht0-1a-qY0" id="Xoa-Zl-kcw"/>
+                <outlet property="postUsernameLabel" destination="oDl-uR-6mj" id="5IO-YG-dgp"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="111.83035714285714"/>
+        </tableViewCell>
+    </objects>
+</document>

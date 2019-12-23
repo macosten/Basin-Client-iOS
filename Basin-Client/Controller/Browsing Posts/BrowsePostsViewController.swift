@@ -9,25 +9,33 @@
 import UIKit
 
 class BrowsePostsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     var posts = [PostLocalRepresentation]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Set the tableView's delegate and data source.
+        tableView.delegate = self
+        tableView.dataSource = self
         
-        // Do any additional setup after loading the view.
+        tableView.register(UINib(nibName: "BrowsePostsTableViewCell", bundle: nil), forCellReuseIdentifier: "BrowsePostsTableViewCell")
     }
     
     override func viewDidAppear(_ animated: Bool) {
         if posts.count == 0 {
             fetchActivePosts()
         }
+        
     }
     
     func fetchActivePosts(){
         let spinner = ActivityIndicatorView(coveringView: self.view, withMessage: "Fetching Posts...")
 
+        // Do a data task.
         
+        spinner.stop()
     }
     
     func fetchAllPosts(){
@@ -42,9 +50,16 @@ class BrowsePostsViewController: UIViewController, UITableViewDelegate, UITableV
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //Todo: Implement this.
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "BrowsePostsTableViewCell", for: indexPath) as? BrowsePostsTableViewCell else {
+            print("Dequeueing BrowsePostsTableViewCell failed.")
+            return UITableViewCell()
+        }
+        let post = posts[indexPath.row]
         
-        return UITableViewCell()
+        cell.postTitleLabel.text = post.title
+        cell.postUsernameLabel.text = post.username
         
+        return cell
     }
     
 }

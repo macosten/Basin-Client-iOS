@@ -27,7 +27,7 @@ class ActivityIndicatorView: UIView {
 
         //Configure the message label.
         messageLabel.text = message
-        messageLabel.textColor = UIColor.darkGray
+        messageLabel.textColor = UIColor.white
         messageLabel.textAlignment = .center
         messageLabel.numberOfLines = 0 //Try not to go too crazy with the message length.
         messageLabel.lineBreakMode = .byWordWrapping

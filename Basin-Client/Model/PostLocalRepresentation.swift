@@ -9,15 +9,21 @@
 import Foundation
 
 struct PostLocalRepresentation : Codable {
-    //The database ID of the post.
-    let id : Int
     
-    //Title of the post.
-    let title : String
+    let id : Int ///The database ID of the post.
     
+    let title : String ///The title of the post.
     
-    let textContent : String
+    let userID : Int /// The ID of the user who created this post.
     
+    let username: String ///The username of the user who created this post.
+    
+    let textContent : String ///The text content of this post.
+    
+    let createdAt : Date? ///The date this post was created.
+    let updatedAt : Date? ///The date this post was edited last.
     //Be sure to keep the fields here and the PublicUserInformation type in the server identical...
+    
+    //For the future, it may be a good idea to have different types for "Stub" (just the id and title) and "Post" (which would have all the fields). This would save bandwidth.
     
 }

@@ -33,6 +33,9 @@
                     <navigationItem key="navigationItem" title="View Posts" id="DcZ-22-C9j">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="F3B-5o-vYs"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="ONm-Wm-r7L" id="ch2-Ey-Z2X"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,6 +8,7 @@
 
 import Foundation
 
+///This is a type meant to map to the kinds of errors that Vapor returns.
 struct VaporError : Codable {
     let error : Bool
     let reason : String
