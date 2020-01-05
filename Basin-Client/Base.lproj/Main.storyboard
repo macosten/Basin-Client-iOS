@@ -48,7 +48,7 @@
         <!--Create Post-->
         <scene sceneID="WGO-qx-ra2">
             <objects>
-                <viewController id="yKy-Ir-hsh" sceneMemberID="viewController">
+                <viewController id="yKy-Ir-hsh" customClass="CreatePostViewController" customModule="Basin_Client" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BmG-ix-Ts3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -136,6 +136,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FVv-hX-NZc">
                                 <rect key="frame" x="172" y="562" width="31" height="30"/>
                                 <state key="normal" title="Post"/>
+                                <connections>
+                                    <action selector="postButtonWasPressed:" destination="yKy-Ir-hsh" eventType="touchUpInside" id="YfH-Vz-Ifa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -153,8 +156,18 @@
                         <viewLayoutGuide key="safeArea" id="mZE-bU-Mtz"/>
                     </view>
                     <navigationItem key="navigationItem" title="Create Post" id="uQh-RA-P3r">
-                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="action" id="XqQ-Sq-Uyh"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="action" id="XqQ-Sq-Uyh">
+                            <connections>
+                                <action selector="postButtonWasPressed:" destination="yKy-Ir-hsh" id="7s8-dn-5mh"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="textLengthLabel" destination="lKX-tI-Xhj" id="qe3-Sa-aGx"/>
+                        <outlet property="textTextView" destination="eeJ-Kg-Qji" id="zom-xR-w0f"/>
+                        <outlet property="titleLengthLabel" destination="5jI-FJ-uyV" id="U7M-Va-4VW"/>
+                        <outlet property="titleTextField" destination="Mza-Ko-7QI" id="4v5-89-jmx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="au5-X3-Vef" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
