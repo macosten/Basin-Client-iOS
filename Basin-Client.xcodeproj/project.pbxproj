@@ -19,6 +19,8 @@
 		116AA70D22BF6925002C9239 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 116AA70B22BF6925002C9239 /* LaunchScreen.storyboard */; };
 		118B217D23B087A100FD8E05 /* BrowsePostsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118B217B23B087A100FD8E05 /* BrowsePostsTableViewCell.swift */; };
 		118B217E23B087A100FD8E05 /* BrowsePostsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 118B217C23B087A100FD8E05 /* BrowsePostsTableViewCell.xib */; };
+		119127B123C16BC100DBC303 /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119127B023C16BC100DBC303 /* CreatePostViewController.swift */; };
+		119127B323C16C3400DBC303 /* ConfigurableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119127B223C16C3400DBC303 /* ConfigurableView.swift */; };
 		11B93E5822C046DD000C4E58 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B93E5722C046DD000C4E58 /* RequestManager.swift */; };
 		11B93E5B22C0479C000C4E58 /* CreateUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B93E5A22C0479C000C4E58 /* CreateUserRequest.swift */; };
 		11B93E5D22C04864000C4E58 /* KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11B93E5C22C04864000C4E58 /* KeychainManager.swift */; };
@@ -49,6 +51,8 @@
 		116AA70E22BF6925002C9239 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		118B217B23B087A100FD8E05 /* BrowsePostsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowsePostsTableViewCell.swift; sourceTree = "<group>"; };
 		118B217C23B087A100FD8E05 /* BrowsePostsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrowsePostsTableViewCell.xib; sourceTree = "<group>"; };
+		119127B023C16BC100DBC303 /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
+		119127B223C16C3400DBC303 /* ConfigurableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableView.swift; sourceTree = "<group>"; };
 		11B93E5722C046DD000C4E58 /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		11B93E5A22C0479C000C4E58 /* CreateUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserRequest.swift; sourceTree = "<group>"; };
 		11B93E5C22C04864000C4E58 /* KeychainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
@@ -141,9 +145,9 @@
 			isa = PBXGroup;
 			children = (
 				11B93E9022C1D7DB000C4E58 /* ActivityIndicatorView.swift */,
-				11B93E8622C0786B000C4E58 /* Authentication */,
 				11B945E022CFC253000C4E58 /* BrowsePostsController */,
 				11B93E6A22C072F1000C4E58 /* Extensions */,
+				119127B223C16C3400DBC303 /* ConfigurableView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -160,19 +164,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		11B93E8622C0786B000C4E58 /* Authentication */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Authentication;
-			sourceTree = "<group>";
-		};
 		11B945DB22CDCE6C000C4E58 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				11B945F222D57069000C4E58 /* Browsing Posts */,
 				11B945DC22CDCE87000C4E58 /* Authentication */,
 				11B945DD22CDCE91000C4E58 /* Extensions */,
+				119127B023C16BC100DBC303 /* CreatePostViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -365,6 +363,7 @@
 				11B93E8F22C08323000C4E58 /* CreateAccountViewController.swift in Sources */,
 				11B93E5822C046DD000C4E58 /* RequestManager.swift in Sources */,
 				11B945F422D5A442000C4E58 /* VaporError.swift in Sources */,
+				119127B123C16BC100DBC303 /* CreatePostViewController.swift in Sources */,
 				11B93E8022C07378000C4E58 /* UIView+Convenience.swift in Sources */,
 				118B217D23B087A100FD8E05 /* BrowsePostsTableViewCell.swift in Sources */,
 				11B93E8122C07378000C4E58 /* UIViewController+Convenience.swift in Sources */,
@@ -373,6 +372,7 @@
 				116AA70322BF6922002C9239 /* FirstViewController.swift in Sources */,
 				11B93E9122C1D7DB000C4E58 /* ActivityIndicatorView.swift in Sources */,
 				11B93E5B22C0479C000C4E58 /* CreateUserRequest.swift in Sources */,
+				119127B323C16C3400DBC303 /* ConfigurableView.swift in Sources */,
 				11B93E8A22C07C7D000C4E58 /* Status.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
