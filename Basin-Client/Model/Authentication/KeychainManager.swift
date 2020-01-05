@@ -14,7 +14,7 @@ final class KeychainManager: NSObject {
     private static let accessGroup = "Basin" //Not final
     private static let serviceName = "Basin-iOS"
     
-    static let keychain = Keychain(service: KeychainManager.serviceName, accessGroup: KeychainManager.accessGroup)
+    static let keychain = Keychain(service: KeychainManager.serviceName)
     
     static var token : String? {
         get {

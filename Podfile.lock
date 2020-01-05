@@ -1,28 +1,32 @@
 PODS:
-  - KeychainAccess (3.2.0)
-  - PromiseKit (6.9.0):
-    - PromiseKit/CorePromise (= 6.9.0)
-    - PromiseKit/Foundation (= 6.9.0)
-    - PromiseKit/UIKit (= 6.9.0)
-  - PromiseKit/CorePromise (6.9.0)
-  - PromiseKit/Foundation (6.9.0):
+  - IQKeyboardManagerSwift (6.5.4)
+  - KeychainAccess (4.1.0)
+  - PromiseKit (6.12.0):
+    - PromiseKit/CorePromise (= 6.12.0)
+    - PromiseKit/Foundation (= 6.12.0)
+    - PromiseKit/UIKit (= 6.12.0)
+  - PromiseKit/CorePromise (6.12.0)
+  - PromiseKit/Foundation (6.12.0):
     - PromiseKit/CorePromise
-  - PromiseKit/UIKit (6.9.0):
+  - PromiseKit/UIKit (6.12.0):
     - PromiseKit/CorePromise
 
 DEPENDENCIES:
+  - IQKeyboardManagerSwift
   - KeychainAccess
   - PromiseKit
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
+    - IQKeyboardManagerSwift
     - KeychainAccess
     - PromiseKit
 
 SPEC CHECKSUMS:
-  KeychainAccess: 3b1bf8a77eb4c6ea1ce9404c292e48f948954c6b
-  PromiseKit: 97397236f9e9c443d5b70a941d49cad25160af7a
+  IQKeyboardManagerSwift: 2dde0fc70110e8eac7ccce2a46fdbec6a850b414
+  KeychainAccess: 445e28864fe6d3458b41fa211bcdc39890e8bd5a
+  PromiseKit: c06835ba442ce5454ce3cdde470232804a6e4ff8
 
-PODFILE CHECKSUM: 5f40b75b162e02b8ea76365b8c6180bb881ecac6
+PODFILE CHECKSUM: 1349382dd51128ec16095e8a3fd81cfc30bef1ff
 
-COCOAPODS: 1.7.2
+COCOAPODS: 1.8.4

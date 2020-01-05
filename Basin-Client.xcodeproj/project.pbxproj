@@ -53,6 +53,7 @@
 		118B217C23B087A100FD8E05 /* BrowsePostsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BrowsePostsTableViewCell.xib; sourceTree = "<group>"; };
 		119127B023C16BC100DBC303 /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
 		119127B223C16C3400DBC303 /* ConfigurableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurableView.swift; sourceTree = "<group>"; };
+		119127B523C187D300DBC303 /* Basin-Client.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Basin-Client.entitlements"; sourceTree = "<group>"; };
 		11B93E5722C046DD000C4E58 /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		11B93E5A22C0479C000C4E58 /* CreateUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserRequest.swift; sourceTree = "<group>"; };
 		11B93E5C22C04864000C4E58 /* KeychainManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainManager.swift; sourceTree = "<group>"; };
@@ -105,6 +106,7 @@
 		116AA6FF22BF6922002C9239 /* Basin-Client */ = {
 			isa = PBXGroup;
 			children = (
+				119127B523C187D300DBC303 /* Basin-Client.entitlements */,
 				116AA70022BF6922002C9239 /* AppDelegate.swift */,
 				116AA70222BF6922002C9239 /* FirstViewController.swift */,
 				116AA70422BF6922002C9239 /* SecondViewController.swift */,
@@ -520,6 +522,7 @@
 			baseConfigurationReference = 2D1D5B72DB1FAA4EF3068DC5 /* Pods-Basin-Client.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Basin-Client/Basin-Client.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5KKJ8V67RN;
 				INFOPLIST_FILE = "Basin-Client/Info.plist";
@@ -539,6 +542,7 @@
 			baseConfigurationReference = 415BB17EA6010906DA3E2E9A /* Pods-Basin-Client.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Basin-Client/Basin-Client.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5KKJ8V67RN;
 				INFOPLIST_FILE = "Basin-Client/Info.plist";
